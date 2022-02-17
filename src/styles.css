@@ -1,0 +1,101 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  font-size: 62.5%;
+}
+
+html {
+  background-color: tan;
+}
+
+.questions--card {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: olive;
+  height: 300px;
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.finished--card {
+  position: relative;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: olive;
+  height: 300px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.question--section {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.answer--section {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+h1 {
+  font-size: 50px;
+  text-align: center;
+  margin: 50px auto;
+}
+h2 {
+  margin-bottom: 30px;
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 50px;
+}
+
+p {
+  background-color: rgb(241, 185, 241);
+  font-size: 20px;
+  border: 1px black solid;
+}
+
+p:hover {
+  background-color: rgb(158, 158, 236);
+  cursor: pointer;
+}
+
+.thumbUp {
+  animation: correct 2s forwards;
+  margin-top: -60px;
+  margin-left: -40px;
+  position: absolute;
+  height: 120%;
+  width: auto;
+}
+
+@keyframes correct {
+  from {
+    z-index: 5;
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -1;
+  }
+}
